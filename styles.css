@@ -11,17 +11,127 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+}
+
+.header {
+    background: url('images/mountains.jpg') center / cover;
+    height: 300px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    margin: 20px;
+}
+
+.title-text{
+    font-size: 35px;
+    text-align: center;
+    line-height: 35px;
+}
+
+.text-container{
+    margin: 20px;
+    padding: 10px;
+    width: 50%;
+}
+
+.page-text{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+}
+
+.vid-wrapper{
+    margin-bottom: 50px;
+    width: 100%;
+}
+.vid-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+iframe{
+    width: 50%;
+    height: 450px;
+}
+
+@media screen and (max-width: 1000px){
+    iframe{
+        width: 80%;
+    }
+    .text-container{
+        width: 80%;
+    }
+    .button-container{
+        width: 80%;
+    }
+}
+
+a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.footer{
+    height: 300px;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    background-color: #4c4c4c;
+}
+
+.button-container{
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
-.demo-layout-transparent {
-    background: url('images/mountains.jpg') center / cover;
-    max-height: 400px;
+.button-wrapper{
+    width: 100%;
+    margin-bottom: 40px;
 }
 
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-/* This background is dark, so we set text to white. Use 87% black instead if
-    your background is light. */
-color: white;
+
+.button-wrapper-footer{
+    width: 100%;
+    color: white;
+}
+
+.button-appointment{
+    color: white;
+}
+
+.form-wrapper{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #4c4c4c;
+}
+
+.form-card{
+    width: 80%;
+    max-width: 620px;
+}
+
+.back-button{
+    margin-top: 30px;
 }
